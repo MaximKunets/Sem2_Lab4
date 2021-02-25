@@ -41,13 +41,15 @@ int pop(Node** head, int index)
     {
         Node* curr = *head;
         Node* curr_index_pre = nullptr;
-        for (int i = 1; i < index; i++)      // здесь я считаю, что индекс головы - единица
+        for (int i = 1; i < index; i++)
+        // here I believe that the head index is a one    
         {
             if (i == index - 2)
-                curr_index_pre = curr->next; // получаю указатель на index-1 элемент
+                // getting a pointer to the index-1 element
+                curr_index_pre = curr->next; 
             curr = curr->next;
         }
-        Node* curr_extra = curr->next;       // получаю указатель на index+1 эл-т
+        Node* curr_extra = curr->next; // getting a pointer to the index+1 element
         value = curr->value;
         free(curr);
         curr_index_pre->next = curr_extra;
