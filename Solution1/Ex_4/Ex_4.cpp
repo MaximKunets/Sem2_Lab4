@@ -11,9 +11,11 @@ void fill_list(Node** head)
 {
     // creating head of list
     int value, n;
+    cout << "number of elements ";
     cin >> n;
     *head = (Node*)malloc(sizeof(Node));
     (*head)->next = nullptr;
+    cout << "value of elements"<< endl;
     cin >> value;
     (*head)->value = value;
 
@@ -43,25 +45,28 @@ void remove(Node** head, int value)
 {
     Node* curr = *head;
     Node* curr_extra = nullptr;
-    while (curr->value != value)
+    while (curr->value != value && curr->next != nullptr)
     {
         curr_extra = curr; // pointer to the element preceding the one you are looking for
         curr = curr->next; // pointer to the desired element
     }
-    if (curr_extra != nullptr)
+    if (curr->next != nullptr)
     {
-        // if the first element we are looking for is not the head
-        curr_extra->next = curr->next;
-        free(curr);
-    }
-    else
-    
-    {
-        // delete head if value coincides with head->value
-        curr_extra = (*head)->next;
-        value = (*head)->value;
-        free(*head);
-        *head = curr_extra;
+        if (curr_extra != nullptr)
+        {
+            // if the first element we are looking for is not the head
+            curr_extra->next = curr->next;
+            free(curr);
+        }
+        else
+
+        {
+            // delete head if value coincides with head->value
+            curr_extra = (*head)->next;
+            value = (*head)->value;
+            free(*head);
+            *head = curr_extra;
+        }
     }
 
 }
@@ -72,6 +77,7 @@ int main()
     Node* head = nullptr;
 
     fill_list(&head);
+    cout << "deleted value ";
     cin >> value;
     remove(&head, value);
 
