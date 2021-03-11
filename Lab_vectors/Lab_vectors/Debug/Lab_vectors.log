@@ -1,0 +1,6 @@
+﻿  Lab_vectors.cpp
+C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\Lab_vectors\Lab_vectors\Lab_vectors.cpp(46,19): warning C4018: <: несоответствие типов со знаком и без знака
+C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\Lab_vectors\Lab_vectors\Lab_vectors.cpp(94,15): warning C4101: new_capacity: неиспользованная локальная переменная
+C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\Lab_vectors\Lab_vectors\Lab_vectors.cpp(93,8): warning C4101: N: неиспользованная локальная переменная
+C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\Lab_vectors\Lab_vectors\Lab_vectors.cpp(93,6): warning C4101: d: неиспользованная локальная переменная
+  Lab_vectors.vcxproj -> C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\Lab_vectors\Debug\Lab_vectors.exe
