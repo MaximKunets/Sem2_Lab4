@@ -1,0 +1,4 @@
+﻿  Ex_8.cpp
+C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\Solution1\Ex_8\Ex_8.cpp(79,20): warning C4101: new_value: неиспользованная локальная переменная
+C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\Solution1\Ex_8\Ex_8.cpp(79,9): warning C4101: old_value: неиспользованная локальная переменная
+  Ex_8.vcxproj -> C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\Solution1\Debug\Ex_8.exe
