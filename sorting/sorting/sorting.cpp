@@ -1,5 +1,6 @@
 ﻿#include <iostream>
 #include <chrono>
+#include <cmath>
 using namespace std;
 void sort_by_choice(int* a, int n) // сортировка выбором
 {
@@ -80,7 +81,7 @@ void time_hoare_sorting(int n) // removing the dependence of the Hoare sorting e
     fopen_s(&fout, "output_hoare_sorting.txt", "w");
     fprintf(fout, "%s", m);
     fprintf(fout, "%c", c);
-    for (int i = 0;i < n;++i)
+    for (int i = 0;i < n;i+=10000)
     {
         int* a = (int*)malloc(i * sizeof(int));
         for (int j = 0;j < i;++j)
@@ -108,10 +109,17 @@ int main()
     cin >> n;
     cout << " what kind of sorting do you want:" << endl << "1 - sort_by_choice" << endl << "2 - hoare_sorting" << endl;
     cin >> c;
-    if (c == 1)
+    int* a = (int*)malloc(n * sizeof(int));
+    for (int i = 0;i < n;++i) {
+        a[i] = rand();
+    }
+   /* if (c == 1)
         time_sort_by_choice(n);
     if (c == 2)
-        time_hoare_sorting(n);
-    
+        time_hoare_sorting(n);*/
+    hoare_sorting(a, 0, n - 1);
+    for (int i = 0;i < n;++i) {
+        cout << a[i]<<" ";
+    }
     return 0;
 }
