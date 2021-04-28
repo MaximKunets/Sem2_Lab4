@@ -1,3 +1,4 @@
 ﻿  trees_or_AVL.cpp
+C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\trees_or_AVL\trees_or_AVL\trees_or_AVL.cpp(452,9): warning C4101: value: неиспользованная локальная переменная
 C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\trees_or_AVL\trees_or_AVL\trees_or_AVL.cpp(187): warning C4715: balance: значение возвращается не при всех путях выполнения
   trees_or_AVL.vcxproj -> C:\Учёба\Физтех. Инфа\C++\Lab_worke_4\Sem2_Lab4\trees_or_AVL\Debug\trees_or_AVL.exe
