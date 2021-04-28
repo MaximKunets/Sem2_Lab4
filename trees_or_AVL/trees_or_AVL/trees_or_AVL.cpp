@@ -246,7 +246,7 @@ void time_insert(int n) {// я смотрю на время вставки ка�
 	curr->parent = nullptr;
 	float time = 0;
 	for (int i = 1;i < n; ++i) {
-		int value = rand();
+		int value = rand() * 100000 + rand();
 		auto start = chrono::high_resolution_clock::now();
 		curr = insert(curr, value);
 		auto end = chrono::high_resolution_clock::now();
